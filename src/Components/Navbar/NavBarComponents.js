@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
   /* Third Nav */
-  /* justify-content: flex-start; */
+  justify-content: flex-start;
 `;
 
 export const NavLink = styled(Link)`
@@ -47,8 +47,8 @@ export const NavMenu = styled.div`
   /* Second Nav */
   /* margin-right: 24px; */
   /* Third Nav */
-  /* width: 100vw;
-  white-space: nowrap; */
+  width: 100vw;
+  white-space: nowrap;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -59,8 +59,8 @@ export const NavBtn = styled.nav`
   align-items: center;
   margin-right: 24px;
   /* Third Nav */
-  /* justify-content: flex-end;
-  width: 100vw; */
+  justify-content: flex-end;
+  width: 100vw;
   @media screen and (max-width: 768px) {
     display: none;
   }
