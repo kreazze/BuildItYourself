@@ -17,9 +17,9 @@ const NavBar = () => {
                      Learn More
                   </NavLink>
                   <NavLink to ="/pre-build" activeStyle>
-                     Pre-builds
+                     Pre-Builds
                   </NavLink>
-                  <NavLink to ="/contact" activeStyle>
+                  <NavLink to ="/contact-us" activeStyle>
                      Contact Us
                   </NavLink>
               </NavMenu>
