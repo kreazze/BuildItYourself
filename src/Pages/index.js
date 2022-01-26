@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./index.css";
 
 const Home = () => {
-    return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh'}}>
-            <h1>Home Page</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <video autoPlay loop muted id="videoTag">
+        <source src="./Resources/vidBack.WEBM" type="video/mp4" />
+      </video>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
