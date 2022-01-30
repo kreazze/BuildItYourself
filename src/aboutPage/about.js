@@ -1,6 +1,6 @@
 import React from 'react';
-import About1 from '../Pages_About/about1'
-import About2 from '../Pages_About/about2'
+import About1 from '../aboutPage/about1'
+import About2 from '../aboutPage/about2'
 
 
 function About() {
