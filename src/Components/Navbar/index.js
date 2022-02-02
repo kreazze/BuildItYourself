@@ -6,7 +6,7 @@ const NavBar = () => {
 
           <Nav>
               <NavLink to="/">
-                  <img src="/Resources/logo.png" width="250" ></img>
+                  <img src="/Resources/logo.png" alt='' width="250" ></img>
               </NavLink>
               <Bars />
               <NavMenu>
