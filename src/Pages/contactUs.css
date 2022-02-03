@@ -1,5 +1,8 @@
 body {
     background-color: black;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%232c1300' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23582600' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23853a00' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23b14d00' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23DD6000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
 }
 
@@ -8,30 +11,30 @@ body {
     text-align: center;
 }
 
-.container {
+.containerContact {
     display: flex;
     justify-content: center;
-    gap: 3rem;
     position: relative;
+    gap: 3rem;
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+    .containerContact {
         flex-direction: column;
     }
-    .appicon_div  {
-        display: inline-block;
+    .contact  {
+        display: flex;
+        flex-direction: row;
     }
     .apps {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 
 .contactUs_div1 {
     border-radius: 5px;
-    border-style: solid;
-    border-color: black;
+    border-style: none;
     display: inline-block;
 }
 
@@ -51,6 +54,7 @@ input {
     border-radius: 5px;
     outline: none;
     background: none;
+    border-color: white;
     color: white;
 }
 
@@ -60,11 +64,12 @@ textarea{
     border-radius: 5px;
     outline: none;
     background: none;
+    border-color: white;
     color: white;
 }
 
 input:hover, textarea:hover{
-    outline: none;
+    outline: white;
     background: none;
     border-color: orange;
 }
@@ -75,19 +80,22 @@ input:focus, textarea:focus{
     color: white;
 }
 
-button{
+#sendBtn {
     width: 5rem;
     height: 2rem;
     margin-top: 15px;
     border-radius: 3px;
-    outline: none;
-    background-color: orange;
+    cursor: pointer;
+    font-weight: bold;
+    background: white;
+    border-style: none;
+    color: #dd6000;
 }
 
-button:hover{
+#sendBtn:hover{
     color: white;
-    outline: none;
-    background-color: peru;
+    outline: solid #e76806;
+    background-color: #dd6000;
 }
 
 .contact{
@@ -100,8 +108,7 @@ button:hover{
 .appicon_div {
     border-radius: 5px;
     padding: 2.5rem;
-    border-style: solid;
-    border-color: black;
+    border-style: none;
 }
 
 .apps{

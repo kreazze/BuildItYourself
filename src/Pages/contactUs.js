@@ -27,7 +27,7 @@ const ContactUs = () => {
     }
 
     const contact_text1 = 'PUP Sta. Mesa, Manila, Philippines'
-    const contact_text2 = 'builtityourself@mail.com'
+    const contact_text2 = 'buildityourself@mail.com'
 
 
     return (
@@ -35,7 +35,7 @@ const ContactUs = () => {
             <div className='header'>
                 <h1>Connect with us!</h1>
             </div>
-            <div className='container'>
+            <div className='containerContact'>
                 <div className='contactUs_div1'>
                     <form>
                         <h2>Have some questions? Send us a message.</h2>
@@ -44,7 +44,8 @@ const ContactUs = () => {
                         <input type={lastName} name='lastName' onChange={lastNametb} placeholder='Enter last name' required/> <br/>
                         <input type={address} name='address' onChange={addresstb} placeholder='Enter address'/> <br/>
                         <input type={email} name='email' onChange={emailtb} placeholder='Enter e-mail (ex. abc@example.com)' required/> <br/>
-                        <textarea type={message} name='message' onChange={messagetb} rows='8' placeholder='Type message here' required/> <br/>                        <button type='submit' variant='warning'>Send</button>
+                        <textarea type={message} name='message' onChange={messagetb} rows='8' placeholder='Type message here' required/> <br/>                        
+                        <button id='sendBtn' type='submit' variant='warning'>Send</button>
                     </form>
                 </div>
                 <div className='contactUS_div2'>

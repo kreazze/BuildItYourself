@@ -1,20 +1,13 @@
 body {
-  overflow: auto;
-}
-
-p {
-  padding: 1rem;
-  letter-spacing: 1px;
-  justify-content: center;
-  background-color: orange;
-}
-
+    overflow: scroll;
+  }
+  
 .about_parallax1 {
     height: 110vh;
     position: relative;
     background-color: black;
-  }
-
+}
+  
 .about_div1 {
   height: 200vh;
   width: 100%;
@@ -30,7 +23,10 @@ p {
   font-size: 20px;
   margin: 100px;
   color: black;
-
+  padding: 1rem;
+  letter-spacing: 1px;
+  justify-content: center;
+  background-color: orange;
 }
 
 .about_parallax2 {
@@ -53,5 +49,8 @@ justify-content: center;
   font-size: 15px;
   margin: 65px;
   color: black;
+  padding: 1rem;
+  letter-spacing: 1px;
+  justify-content: center;
+  background-color: orange;
 }
-
