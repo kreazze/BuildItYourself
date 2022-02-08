@@ -114,6 +114,6 @@ input:focus, textarea:focus{
 .apps{
     display: inline-flex;
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
     cursor: pointer;
 }

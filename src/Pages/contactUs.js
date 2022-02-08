@@ -61,11 +61,7 @@ const ContactUs = () => {
                         <h2>Other ways to connect</h2>
                         <div className='apps'>
                             <BsFacebook size={50}/>
-                        </div>
-                        <div className='apps'>
                             <BsInstagram size={50}/>
-                        </div>
-                        <div className='apps'>
                             <BsYoutube size={50}/>
                         </div>
                     </div>

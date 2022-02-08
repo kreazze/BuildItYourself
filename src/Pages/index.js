@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import "./index.css";
-
-const Home = () => {
-  return (
-    <div>
-      <video autoPlay loop muted id="videoTag">
-        <source src="./Resources/vidBack.WEBM" type="video/mp4" />
-      </video>
-    </div>
-  );
-};
-=======
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './index.css'
@@ -19,22 +5,9 @@ import Img3 from '../Images/img3.png';
 import Img4 from '../Images/img4.png';
 import Img5 from '../Images/img5.png';
 import Img6 from '../Images/img6.png';
+import {BsFacebook, BsInstagram, BsYoutube} from 'react-icons/bs';
+import {MdLocationOn, MdEmail} from 'react-icons/md';
 
-
-function Box(props) {
-    return (
-        <div>
-            <div>
-                <div className='downleftDiv'>
-                    <img src={Img4} alt='' height={500} width={500}/>
-                </div> 
-                <div className='downrightDiv'>
-                    <h1>for Gaming, {props.description}</h1>
-                </div>
-            </div>
-        </div>
-    )
-}
 
 const Home = () => {
     return (
@@ -56,11 +29,68 @@ const Home = () => {
             </div>
             <div className='downcontainerIndex'>
                 <form>
+                    <Link to='/build' className='downDiv' color='#dd600'>
+                        <div className='box1'>
+                            <Box description="Gaming" images={Img4}/>
+                        </div>
+                        <div className='box1'>
+                            <Box description="Office" images={Img5}/>
+                        </div>
+                        <div className='box1'>
+                            <Box description="Educational" images={Img6}/>
+                        </div>
+                    </Link>
                 </form>
+            </div>
+            <Footer />
+        </div>
+    )
+}
+
+const Box = (props) => {
+    return (
+        <div>
+            <div className='homeBox' style={{cursor:'pointer'}}>
+                <img src={props.images} alt='' height={300} width={300}/>
+                <h1>for {props.description}</h1>
             </div>
         </div>
     )
 }
->>>>>>> ce54155cbf6ee698cea8dbdab56c76036584ec74
 
-export default Home;
+
+const Footer = () => {
+const contact_text1 = 'PUP Sta. Mesa, Manila, Philippines'
+const contact_text2 = 'buildityourself@mail.com'
+const contact_text3 = 'www.facebook.com/b-i-y'
+const contact_text4 = 'www.intagram.com/@b-i-y'
+const contact_text5 = 'www.youtube.com/Build-It-Yourself'
+
+    return (
+        <div className='homeFooter'> 
+            <div className='homeFooterleft'>
+                <h1>Social Media Links</h1>
+                <div className='contact_apps'> 
+                    <BsFacebook size={50}/> {contact_text3}
+                </div>
+                <div className='contact_apps'> 
+                    <BsInstagram size={50}/> {contact_text4}
+                </div>
+                <div className='contact_apps'> 
+                    <BsYoutube size={50}/> {contact_text5}
+                </div>
+            </div>
+            <div className='homeFooterright'>
+                <h1>Contact Info</h1>
+                <div className='contact_apps'>
+                    <MdLocationOn size={50}/>{contact_text1}
+                </div>
+                <div className='contact_apps'>
+                    <MdEmail size={50}/>{contact_text2}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Home
