@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import './index.css'
+import "./index.css";
 import Img3 from '../Images/img3.png';
 import Img4 from '../Images/img4.png';
 import Img5 from '../Images/img5.png';
@@ -14,6 +14,11 @@ const Home = () => {
         <div>
             <div className='uppercontainerIndex'>
                 <form className='upperleftDiv'>
+                <div>
+                    <video autoPlay loop muted id="videoTag">
+                    <source src="./Resources/vidBack.WEBM" type="video/mp4" />
+                    </video>
+                </div>
                     <h1>LET'S <span>BUILD YOUR PC</span> NOW!</h1>
                     <p className='pIndex'>Get your way to technology</p>
                     <Link to='/learn'>
