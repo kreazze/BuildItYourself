@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #videoTag {
     position: fixed;
     z-index: -1;
@@ -9,6 +10,8 @@
     height: auto;
 }
 =======
+=======
+>>>>>>> ce54155cbf6ee698cea8dbdab56c76036584ec74
 body {
     background-color: black;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%232c1300' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23582600' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23853a00' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23b14d00' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23DD6000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
@@ -102,4 +105,7 @@ span{
 .downrightDiv {
 
 }
+<<<<<<< HEAD
+>>>>>>> ce54155cbf6ee698cea8dbdab56c76036584ec74
+=======
 >>>>>>> ce54155cbf6ee698cea8dbdab56c76036584ec74
