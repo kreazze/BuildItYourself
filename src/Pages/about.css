@@ -2,6 +2,18 @@ body {
     overflow: scroll;
   }
   
+  @media screen and (min-width: 768px) {
+    div.about_div1 {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 770px) {
+    div.about_div1 {
+      font-size: 15px;
+    }
+  }
+
 .about_parallax1 {
     height: 110vh;
     position: relative;
@@ -20,7 +32,6 @@ body {
 }
 
 .text1 {
-  font-size: 20px;
   margin: 100px;
   color: black;
   padding: 1rem;
