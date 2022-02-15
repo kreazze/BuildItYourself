@@ -1,0 +1,56 @@
+body {
+    overflow: scroll;
+  }
+  
+.about_parallax1 {
+    height: 110vh;
+    position: relative;
+    background-color: black;
+}
+  
+.about_div1 {
+  height: 200vh;
+  width: 100%;
+  margin-top: 50px;
+  display:inline;
+  position: absolute;
+  text-align: center;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.text1 {
+  font-size: 20px;
+  margin: 100px;
+  color: black;
+  padding: 1rem;
+  letter-spacing: 1px;
+  justify-content: center;
+  background-color: orange;
+}
+
+.about_parallax2 {
+  height: 100vh;
+  position: relative;
+  background-color: black;
+}
+
+.about_div2 {
+height: 200vh;
+width: 100%;
+display: flex;
+position: absolute;
+text-align: center;
+align-items:baseline;
+justify-content: center;
+}
+
+.text2 {
+  font-size: 15px;
+  margin: 65px;
+  color: black;
+  padding: 1rem;
+  letter-spacing: 1px;
+  justify-content: center;
+  background-color: orange;
+}
