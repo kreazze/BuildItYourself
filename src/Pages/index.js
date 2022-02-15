@@ -10,6 +10,11 @@ import {MdLocationOn, MdEmail} from 'react-icons/md';
 
 
 const Home = () => {
+    const divScroll = () => window.scrollTo({
+        scroll: document.getElementById('midScroll').scrollHeight,
+        behavior: "smooth"
+    })
+
     return (
         <div>
             <div className='uppercontainerIndex'>
@@ -21,9 +26,7 @@ const Home = () => {
                 </div>
                     <h1>LET'S <span>BUILD YOUR PC</span> NOW!</h1>
                     <p className='pIndex'>Get your way to technology</p>
-                    <Link to='/learn'>
-                        <button className='btnHome1'>Learn More</button>
-                    </Link>
+                    <button className='btnHome1' onClick={divScroll}>Learn More</button>
                     <Link to='/pre-build'>
                         <button className='btnHome2'>Pre-Builds</button>
                     </Link>
@@ -32,7 +35,7 @@ const Home = () => {
                     <img src={Img3} alt='' height={500} width={500}/>
                 </form>
             </div>
-            <div className='downcontainerIndex'>
+            <div className='downcontainerIndex' id="midScroll">
                 <form>
                     <Link to='/build' className='downDiv' color='#dd600'>
                         <div className='box1'>
@@ -65,11 +68,11 @@ const Box = (props) => {
 
 
 const Footer = () => {
-const contact_text1 = 'PUP Sta. Mesa, Manila, Philippines'
-const contact_text2 = 'buildityourself@mail.com'
-const contact_text3 = 'www.facebook.com/b-i-y'
-const contact_text4 = 'www.intagram.com/@b-i-y'
-const contact_text5 = 'www.youtube.com/Build-It-Yourself'
+    const contact_text1 = 'PUP Sta. Mesa, Manila, Philippines'
+    const contact_text2 = 'buildityourself@mail.com'
+    const contact_text3 = 'www.facebook.com/b-i-y'
+    const contact_text4 = 'www.intagram.com/@b-i-y'
+    const contact_text5 = 'www.youtube.com/Build-It-Yourself'
 
     return (
         <div className='homeFooter'> 
