@@ -1,0 +1,29 @@
+.homeFooter {
+    margin-top: 5rem;
+    padding: 2rem;
+    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(#0000, #161616);
+}
+
+.homeFooterleft {
+    margin: 5px;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeFooterright {
+    margin: 5px;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_apps {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}	
