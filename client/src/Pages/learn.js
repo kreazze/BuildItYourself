@@ -1,4 +1,6 @@
 import React from 'react'
+import './learn.css';
+import Footer from '../Pages/footer';
 
 const Learn = () => {
     return (
@@ -7,6 +9,7 @@ const Learn = () => {
                 <h1>Learn Now!</h1>
 
             </div>
+            <Footer/>
         </div>
     )
 }

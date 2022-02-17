@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Axios from "axios";
+import Footer from '../Pages/footer';
 
 const Build = () => {
   const [processor, setProcessor] = useState("");
@@ -17,13 +18,14 @@ const Build = () => {
     });
   };
   return (
-    <div
+    <div  
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "90vh",
-      }}
+      display: "inline-block",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100%",
+      width: "100%",
+    }}
     >
       <input
         type="text"
@@ -47,7 +49,9 @@ const Build = () => {
         }}
       />
       <button onClick={createOrders}>Submit</button>
+      <Footer/>
     </div>
+    
   );
 };
 

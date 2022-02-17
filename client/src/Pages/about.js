@@ -1,9 +1,9 @@
 import React from 'react';
 import { Parallax } from 'react-parallax'
+import Footer from '../Pages/footer';
 import './about.css';
 import Img1 from '../Images/img1.jpg';
 import Img2 from '../Images/img2.jpg';
-
 
 function About() {
     return (
@@ -40,6 +40,9 @@ const About2 = () => {
                   custom PC building is the type of services we offered, B-I-Y contains selection of computer parts 
                   based on the user's preferences. Selections are being filtered out on its brand, price, budget, and 
                   availability of the components.</p>
+          </div>
+          <div className='about_div3'>
+              <Footer/>
           </div>
       </Parallax>
   )

@@ -1,9 +1,11 @@
 import React from 'react'
+import Footer from '../Pages/footer';
 
 const PreBuilds = () => {
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh'}}>
+        <div>
             <h1>Pre-Builds</h1>
+            <Footer/>
         </div>
     )
 }
