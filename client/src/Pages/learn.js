@@ -1,5 +1,6 @@
 import React from 'react'
 import './learn.css';
+<<<<<<< HEAD
 import { Carousel, Card } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from '../Pages/footer';
@@ -204,8 +205,15 @@ const Learn = () => {
                             <Card.Title>Community</Card.Title>
                         </Card.Body>
                 </Card>
+=======
+
+const Learn = () => {
+    return (
+        <div>
+            <div className='learnmore_div1'>
+                <h1>Learn Now!</h1>
+>>>>>>> b54f214288d0b6c6922df7f9a5493148a4e4b3e6
             </div>
-            <Footer/>
         </div>
     )
 }
