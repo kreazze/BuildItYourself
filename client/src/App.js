@@ -8,7 +8,6 @@ import ContactUs from './Pages/contactUs';
 import Learn from './Pages/learn';
 import PreBuilds from './Pages/preBuilds';
 import Build from './Pages/build';
-import Footer from './Pages/footer';
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
         <Route path='/pre-build' component={PreBuilds} />
         <Route path='/build' component={Build} />
       </Switch>
-      <Footer />
     </Router>
   );
     

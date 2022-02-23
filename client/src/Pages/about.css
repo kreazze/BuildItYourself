@@ -18,6 +18,7 @@ body {
     height: 110vh;
     position: relative;
     background-color: black;
+    scroll-behavior: smooth;
 }
   
 .about_div1 {
@@ -44,6 +45,7 @@ body {
   height: 100vh;
   position: relative;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 .about_div2 {
@@ -69,8 +71,8 @@ align-items:baseline;
   background-color: orange;
 }
 
-.about_div3{
+.about_footer{
   width: 100%;
   position: relative;
-  bottom: -360px;
+  bottom: -370px;
 }

@@ -1,12 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./index.css";
+import Footer from '../Pages/footer';
 import Img3 from '../Images/img3.png';
 import Img4 from '../Images/img4.png';
 import Img5 from '../Images/img5.png';
 import Img6 from '../Images/img6.png';
 
 const Home = () => {
+    const Box = (props) => {
+        return (
+            <div>
+                <div className='homeBox' style={{cursor:'pointer'}}>
+                    <img src={props.images} alt='' height={300} width={300}/>
+                    <h1>for {props.description}</h1>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div>
             <div className='uppercontainerIndex'>
@@ -29,7 +41,6 @@ const Home = () => {
                 <form className='upperrightDiv'>
                     <img src={Img3} alt='' height={500} width={500}/>
                 </form>
-                
             </div>
 
             <div className='downcontainerIndex'>
@@ -47,17 +58,7 @@ const Home = () => {
                     </Link>
                 </form>
             </div>
-        </div>
-    )
-}
-
-const Box = (props) => {
-    return (
-        <div>
-            <div className='homeBox' style={{cursor:'pointer'}}>
-                <img src={props.images} alt='' height={300} width={300}/>
-                <h1>for {props.description}</h1>
-            </div>
+            <Footer/>
         </div>
     )
 }

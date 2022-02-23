@@ -2,8 +2,10 @@
     margin-top: 5rem;
     padding: 2rem;
     gap: 5rem;
+    font-size: 15px;
     display: flex;
     flex-direction: row;
+    color: white;
     background: linear-gradient(#0000, #161616);
 }
 

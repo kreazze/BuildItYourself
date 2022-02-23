@@ -31,7 +31,7 @@ const ContactUs = () => {
 
 
     return (
-        <div>
+        <div className='contactUs_body'>
             <div className='header'>
                 <h1>Connect with us!</h1>
             </div>
@@ -40,11 +40,11 @@ const ContactUs = () => {
                     <form>
                         <h2>Have some questions? Send us a message.</h2>
                         <alert>Feel free to contact us with your concerns.</alert> <br/>
-                        <input type={firstName} name='firstName' onChange={firstNametb} placeholder='Enter first name' required/> <br/>
-                        <input type={lastName} name='lastName' onChange={lastNametb} placeholder='Enter last name' required/> <br/>
-                        <input type={address} name='address' onChange={addresstb} placeholder='Enter address'/> <br/>
-                        <input type={email} name='email' onChange={emailtb} placeholder='Enter e-mail (ex. abc@example.com)' required/> <br/>
-                        <textarea type={message} name='message' onChange={messagetb} rows='8' placeholder='Type message here' required/> <br/>                        
+                        <input id="textBox" type={firstName} name='firstName' onChange={firstNametb} placeholder='Enter first name' required/> <br/>
+                        <input id="textBox" type={lastName} name='lastName' onChange={lastNametb} placeholder='Enter last name' required/> <br/>
+                        <input id="textBox" type={address} name='address' onChange={addresstb} placeholder='Enter address'/> <br/>
+                        <input id="textBox" type={email} name='email' onChange={emailtb} placeholder='Enter e-mail (ex. abc@example.com)' required/> <br/>
+                        <textarea id="textBox" type={message} name='message' onChange={messagetb} rows='8' placeholder='Type message here' required/> <br/>                        
                         <button id='sendBtn' type='submit' variant='warning'>Send</button>
                     </form>
                 </div>
