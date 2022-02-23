@@ -1,13 +1,12 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Axios from "axios";
-import { Button, Form } from "react-bootstrap";
+import {Form } from "react-bootstrap";
 
 const Build = () => {
   var [processor, setProcessor] = useState("");
   var [motherboard, setMotherboard] = useState("");
   var [graphicsCard, setGraphicsCard] = useState("");
-  var [isDisabled, setIsDisabled] = useState(false);
 
   const createOrders = () => {
     Axios.post("http://localhost:3001/createOrders", {
@@ -19,14 +18,20 @@ const Build = () => {
     });
   };
 
-  const enableMotherboard = () => {
-    
-    if (processor.value === "null") {
-      setIsDisabled(!isDisabled)
-    }
-  };
+  const [disabledMobo, setDisabledMobo] = useState(true);
+  const [disabledGPU, setDisabledGPU] = useState(true);
 
- 
+  function handleEnableMobo() {
+    if (processor.length !== 0 && processor !== "null"){
+      setDisabledMobo(!disabledMobo);
+    }
+  }
+  function handleEnableGPU() {
+    if (processor.length !== 0 && processor !== "null" && motherboard.length !== 0 && motherboard !== "null"){
+      setDisabledGPU(!disabledGPU);
+    }
+  }
+
   return (
     <div>
       <Form>
@@ -34,7 +39,6 @@ const Build = () => {
           <Form.Label>Processor:</Form.Label>
           <Form.Select
             aria-label="Default select example"
-            onInput={enableMotherboard}
             onChange={(event) => 
               setProcessor(event.target.value)}
           >
@@ -43,13 +47,12 @@ const Build = () => {
             <option value="AMD A7">AMD A7</option>
             <option value="AMD Ryzen 3">AMD Ryzen 3</option>
           </Form.Select>
-          
-          
+              <button onClick={handleEnableMobo} type="button" >Next</button>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupMotherboard">
           <Form.Label>Motherboard:</Form.Label>
           <Form.Select
-            disabled={isDisabled}
+            disabled={disabledMobo}
             aria-label="Default select example"
             id="motherboardDrop"
             
@@ -62,11 +65,12 @@ const Build = () => {
             <option value="Acer">Acer</option>
             <option value="Gigabyte">Gigabyte</option>
           </Form.Select>
+          <button onClick={handleEnableGPU} type="button" >Next</button>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupGraphicsCard">
           <Form.Label>Graphics Card:</Form.Label>
           <Form.Select
-            disabled={isDisabled}
+            disabled={disabledGPU}
             aria-label="Default select example"
             id="GraphicsCardDrop"
             onChange={(event) => {
