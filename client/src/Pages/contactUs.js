@@ -31,7 +31,7 @@ const ContactUs = () => {
 
 
     return (
-        <div>
+        <div className='contactUs_body'>
             <div className='header'>
                 <h1>Connect with us!</h1>
             </div>

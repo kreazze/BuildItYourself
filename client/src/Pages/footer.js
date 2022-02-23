@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div className='homeFooter'> 
             <div className='homeFooterleft'>
-                <h1>Social Media Links</h1>
+                <h2>Social Media Links</h2>
                 <div className='contact_apps'> 
                     <BsFacebook size={30}/> {contact_text3}
                 </div>
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='homeFooterright'>
-                <h1>Contact Info</h1>
+                <h2>Contact Info</h2>
                 <div className='contact_apps'>
                     <MdLocationOn size={30}/>{contact_text1}
                 </div>

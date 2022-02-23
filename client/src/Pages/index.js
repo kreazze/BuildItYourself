@@ -8,6 +8,17 @@ import Img5 from '../Images/img5.png';
 import Img6 from '../Images/img6.png';
 
 const Home = () => {
+    const Box = (props) => {
+        return (
+            <div>
+                <div className='homeBox' style={{cursor:'pointer'}}>
+                    <img src={props.images} alt='' height={300} width={300}/>
+                    <h1>for {props.description}</h1>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div>
             <div className='uppercontainerIndex'>
@@ -30,7 +41,6 @@ const Home = () => {
                 <form className='upperrightDiv'>
                     <img src={Img3} alt='' height={500} width={500}/>
                 </form>
-                
             </div>
 
             <div className='downcontainerIndex'>
@@ -49,17 +59,6 @@ const Home = () => {
                 </form>
             </div>
             <Footer/>
-        </div>
-    )
-}
-
-const Box = (props) => {
-    return (
-        <div>
-            <div className='homeBox' style={{cursor:'pointer'}}>
-                <img src={props.images} alt='' height={300} width={300}/>
-                <h1>for {props.description}</h1>
-            </div>
         </div>
     )
 }

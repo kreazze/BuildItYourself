@@ -18,15 +18,14 @@ const Build = () => {
     });
   };
   return (
-    <div  
+    <div
       style={{
       display: "inline-block",
       justifyContent: "center",
       alignItems: "center",
       height: "100%",
       width: "100%",
-    }}
-    >
+    }}>
       <input
         type="text"
         placeholder="Processor"
