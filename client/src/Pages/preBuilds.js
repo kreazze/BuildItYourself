@@ -1,10 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
 import './preBuilds.css'
-import Footer from '../Pages/footer';
-=======
-
->>>>>>> b54f214288d0b6c6922df7f9a5493148a4e4b3e6
 
 const PreBuilds = () => {
     return (

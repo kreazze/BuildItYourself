@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./index.css";
+import Footer from '../Pages/footer';
 import Img3 from '../Images/img3.png';
 import Img4 from '../Images/img4.png';
 import Img5 from '../Images/img5.png';
@@ -57,6 +58,7 @@ const Home = () => {
                     </Link>
                 </form>
             </div>
+            <Footer/>
         </div>
     )
 }

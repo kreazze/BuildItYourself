@@ -28,39 +28,6 @@ const Build = () => {
 
  
   return (
-<<<<<<< HEAD
-    <div
-      style={{
-      display: "inline-block",
-      justifyContent: "center",
-      alignItems: "center",
-      height: "100%",
-      width: "100%",
-    }}>
-      <input
-        type="text"
-        placeholder="Processor"
-        onChange={(event) => {
-          setProcessor(event.target.value);
-        }}
-      />
-      <input
-        type="text"
-        placeholder="Motherboard"
-        onChange={(event) => {
-          setMotherboard(event.target.value);
-        }}
-      />
-      <input
-        type="text"
-        placeholder="Graphics card"
-        onChange={(event) => {
-          setGraphicsCard(event.target.value);
-        }}
-      />
-      <button onClick={createOrders}>Submit</button>
-      <Footer/>
-=======
     <div>
       <Form>
         <Form.Group className="mb-3" controlId="formGroupProcessor">
@@ -116,7 +83,6 @@ const Build = () => {
       </Form>
 
       <p>{processor}{motherboard}{graphicsCard}</p>
->>>>>>> b54f214288d0b6c6922df7f9a5493148a4e4b3e6
     </div>
   );
 };
