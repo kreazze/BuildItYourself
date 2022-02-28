@@ -3,9 +3,19 @@ import './preBuilds.css'
 
 const PreBuilds = () => {
     return (
-        <div className="preBuilds_body">
-            <h1>Pre-Builds</h1>
-        </div>
+        <>
+            <div className="preBuilds_body">
+                <div className="content">
+
+                </div>
+                <div className="content">
+
+                </div>
+                <div className="content">
+
+                </div>
+            </div>
+        </>
     )
 }
 

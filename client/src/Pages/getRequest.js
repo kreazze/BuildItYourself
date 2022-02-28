@@ -21,7 +21,16 @@ const getRequest = () => {
                         <div>
                             <h1>Processor: {order.processor}</h1>
                             <h1>Motherboard: {order.motherboard}</h1>
+                            <h1>RAM: {order.ram}</h1>
                             <h1>Graphics Card: {order.graphicsCard}</h1>
+                            <h1>Storage: {order.storage}</h1>
+                            <h1>Power Supply: {order.powersupply}</h1>
+                            <h1>System Cooler: {order.systemcooler}</h1>
+                            <h1>Sound Card: {order.soundcard}</h1>
+                            <h1>CPU Case: {order.cpucase}</h1>
+                            <h1>Monitor: {order.monitor}</h1>
+                            <h1>Keyboard: {order.keyboard}</h1>
+                            <h1>Mouse: {order.mouse}</h1>
                         </div>
                     )
                 })}
