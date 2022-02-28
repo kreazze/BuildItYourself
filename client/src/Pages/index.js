@@ -13,7 +13,7 @@ const Home = () => {
             <div>
                 <div className='homeBox' style={{cursor:'pointer'}}>
                     <img src={props.images} alt='' height={300} width={300}/>
-                    <h1>for {props.description}</h1>
+                    <h1>{props.description}</h1>
                 </div>
             </div>
         )

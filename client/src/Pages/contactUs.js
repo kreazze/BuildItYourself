@@ -28,6 +28,9 @@ const ContactUs = () => {
 
     const contact_text1 = 'PUP Sta. Mesa, Manila, Philippines'
     const contact_text2 = 'buildityourself@mail.com'
+    const contact_text3 = 'www.facebook.com/buildityourself'
+    const contact_text4 = 'www.intagram.com/_buildityourself'
+    const contact_text5 = 'www.youtube.com/Build-It-Yourself'
 
 
     return (
@@ -40,12 +43,43 @@ const ContactUs = () => {
                     <form>
                         <h2>Have some questions? Send us a message.</h2>
                         <alert>Feel free to contact us with your concerns.</alert> <br/>
-                        <input id="textBox" type={firstName} name='firstName' onChange={firstNametb} placeholder='Enter first name' required/> <br/>
-                        <input id="textBox" type={lastName} name='lastName' onChange={lastNametb} placeholder='Enter last name' required/> <br/>
-                        <input id="textBox" type={address} name='address' onChange={addresstb} placeholder='Enter address'/> <br/>
-                        <input id="textBox" type={email} name='email' onChange={emailtb} placeholder='Enter e-mail (ex. abc@example.com)' required/> <br/>
-                        <textarea id="textBox" type={message} name='message' onChange={messagetb} rows='8' placeholder='Type message here' required/> <br/>                        
-                        <button id='sendBtn' type='submit' variant='warning'>Send</button>
+                        <input 
+                            id="textBox" 
+                            type={firstName} 
+                            name='firstName' 
+                            onChange={firstNametb} 
+                            placeholder='Enter first name' 
+                            required/> <br/>
+                        <input 
+                            id="textBox" 
+                            type={lastName} 
+                            name='lastName' 
+                            onChange={lastNametb} 
+                            placeholder='Enter last name' 
+                            required/> <br/>
+                        <input 
+                            id="textBox" 
+                            type={address} 
+                            name='address' 
+                            onChange={addresstb} 
+                            placeholder='Enter address'/> <br/>
+                        <input 
+                            id="textBox" 
+                            type={email} 
+                            name='email' 
+                            onChange={emailtb} 
+                            placeholder='Enter e-mail (ex. abc@example.com)' 
+                            required/> <br/>
+                        <textarea 
+                            id="textBox" 
+                            type={message} 
+                            name='message' 
+                            onChange={messagetb} 
+                            rows='8' 
+                            placeholder='Type message here' 
+                            required/> <br/>                        
+                        <button 
+                            id='sendBtn' type='submit' variant='warning'>Send</button>
                     </form>
                 </div>
                 <div className='contactUS_div2'>
@@ -59,10 +93,14 @@ const ContactUs = () => {
                         </div><br/>
                         
                         <h2>Other ways to connect</h2>
-                        <div className='apps'>
-                            <BsFacebook size={50}/>
-                            <BsInstagram size={50}/>
-                            <BsYoutube size={50}/>
+                        <div className='contact'>
+                            <BsFacebook size={50}/>{contact_text3}
+                        </div>
+                        <div className='contact'>
+                            <BsInstagram size={50}/>{contact_text4}
+                        </div>
+                        <div className='contact'>
+                            <BsYoutube size={50}/>{contact_text5}
                         </div>
                     </div>
                 </div> 

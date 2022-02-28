@@ -1,13 +1,13 @@
 .contactUs_body {
     background-color: black;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%232c1300' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23582600' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23853a00' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23b14d00' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23DD6000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("../Images/Carousel-Background.jpg");
     background-attachment: fixed;
     background-size: cover;
-    color: white;
+    color: black;
 }
 
 .header {
-    pad: 1rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -33,13 +33,10 @@
 }
 
 .contactUs_div1 {
+    margin: 1.5rem;
     border-radius: 5px;
     border-style: none;
     display: inline-block;
-}
-
-form {
-    margin: 1.5rem;
 }
 
 h2{
@@ -71,7 +68,7 @@ textarea{
 input:hover, textarea:hover{
     outline: white;
     background: none;
-    border-color: orange;
+    border-color: #f58634;
 }
 
 input:focus, textarea:focus{
@@ -85,33 +82,34 @@ input:focus, textarea:focus{
 }
 
 #sendBtn {
-    width: 5rem;
-    height: 2rem;
+    width: 6rem;
+    height: 2.25rem;
     margin-top: 15px;
     border-radius: 3px;
     cursor: pointer;
     font-weight: bold;
     background: white;
     border-style: none;
-    color: #dd6000;
+    color: black;
 }
 
 #sendBtn:hover{
-    color: white;
-    outline: solid #e76806;
-    background-color: #dd6000;
+    color: #f58634;
+    outline: #f58634;
+    background-color: white;
 }
 
 .contact{
     display: flex;
     align-items: center;
-    margin: 3rem;
+    margin: 1.5rem;
+    gap: 1rem;
     cursor: pointer;
 }
 
 .appicon_div {
     border-radius: 5px;
-    padding: 2.5rem;
+    padding-top: 1.5rem;
     border-style: none;
 }
 

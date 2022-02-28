@@ -6,8 +6,8 @@ import {MdLocationOn, MdEmail} from 'react-icons/md';
 const Footer = () => {
     const contact_text1 = 'PUP Sta. Mesa, Manila, Philippines'
     const contact_text2 = 'buildityourself@mail.com'
-    const contact_text3 = 'www.facebook.com/b-i-y'
-    const contact_text4 = 'www.intagram.com/@b-i-y'
+    const contact_text3 = 'www.facebook.com/buildityourself'
+    const contact_text4 = 'www.intagram.com/_buildityourself'
     const contact_text5 = 'www.youtube.com/Build-It-Yourself'
 
     return (

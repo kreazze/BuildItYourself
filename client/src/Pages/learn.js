@@ -34,7 +34,7 @@ const Learn = () => {
                             width={470}
                         />
                         <Carousel.Caption id='carouselTexttitle'>
-                            <p>Parts of a Computer</p>
+                            <p>The Components</p>
                         </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item id='carouselImages'>
@@ -205,7 +205,7 @@ const Learn = () => {
                         </Card.Body>
                 </Card>
             </div>
-            <Footer/>
+        <Footer />
         </div>
     )
 }
