@@ -1,10 +1,30 @@
-.form
-{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
+.Process {
+    
 }
 
-h1 {
-    text-align: center;
+.firstProcess {
+    height: 100vh;
+    width: 100vw;
+}
+
+.secondProcess {
+    height: 100vh;
+    width: 100vw;
+}
+
+.buildForm {
+    background-image: url("../Images/Carousel-Background.jpg");
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    padding-right: 4rem;
+}
+
+#note {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #f58634;
+    background-color: #f58634;
 }
