@@ -11,8 +11,12 @@ body {
     text-align: center;
 }
 
+.carouselLearn {
+    padding: 0;
+    margin: 0;
+}
+
 .learnmore_div1 {
-    padding-top: 3px;
     padding-bottom: 0;
     margin: 0;
     background-color: black;

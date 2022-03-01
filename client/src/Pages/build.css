@@ -1,5 +1,5 @@
 .Process {
-    
+    width: 100%;
 }
 
 .firstProcess {
@@ -21,6 +21,15 @@
 }
 
 #note {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #f58634;
+    background-color: #f58634;
+}
+
+.componentLabel {
     margin-bottom: 1rem;
     padding: 0.5rem;
     border-radius: 8px;

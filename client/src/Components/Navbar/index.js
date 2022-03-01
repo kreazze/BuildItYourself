@@ -1,31 +1,37 @@
 import React from 'react'
+import { NavDropdown } from 'react-bootstrap'
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavBarComponents'
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
     return (
 
           <Nav>
-              <NavLink to="/">
-                  <img src="/Resources/logo.png" alt='' width="250" ></img>
-              </NavLink>
-              <Bars />
-              <NavMenu>
-                  <NavLink to ="/about" activeStyle>
-                     About
-                  </NavLink>
-                  <NavLink to ="/learn" activeStyle>
-                     Learn More
-                  </NavLink>
-                  <NavLink to ="/pre-build" activeStyle>
-                     Pre-Builds
-                  </NavLink>
-                  <NavLink to ="/contact-us" activeStyle>
-                     Contact Us
-                  </NavLink>
-              </NavMenu>
-              <NavBtn>
-                  <NavBtnLink to ='/build'>Start Building!</NavBtnLink>
-              </NavBtn>
+                <NavLink to="/">
+                    <img src="/Resources/logo.png" alt='' width="250" ></img>
+                </NavLink>
+                <Bars />
+                <NavMenu>
+                    <NavLink to ="/about" activeStyle>
+                        About
+                    </NavLink>
+                    <NavLink to ="/learn" activeStyle>
+                        Learn More
+                    </NavLink>
+                    <NavDropdown title="Pre-Builds" id="dropdown">
+                        <NavDropdown.Item as={Link} to="/student" id="dropdown">for Student</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item as={Link} to="/gaming" id="dropdown">for Gaming</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item as={Link} to="/education" id="dropdown">for Education</NavDropdown.Item>
+                    </NavDropdown>
+                    <NavLink to ="/contact-us" activeStyle>
+                        Contact Us
+                    </NavLink>
+                </NavMenu>
+                <NavBtn>
+                    <NavBtnLink to ='/build'>Start Building!</NavBtnLink>
+                </NavBtn>
           </Nav>
     )
 }

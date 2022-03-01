@@ -7,6 +7,7 @@ import Slides1 from "./slides1";
 import Slides2 from "./slides2";
 import Slides3 from "./slides3";
 import Slides4 from "./slides4";
+import Transaction from "./transaction";
 
 
 const Build = () => {
@@ -95,6 +96,7 @@ const Build = () => {
               <option value="Gigabyte">Gigabyte</option>
             </Form.Select>
             <button onClick={handleEnableGPU} type="button" >Next</button>
+            <Slides2 />
           </Form.Group>
           
           <Form.Group controlId="formGroupRAM">
@@ -114,6 +116,7 @@ const Build = () => {
               <option value="Gigabyte">Gigabyte</option>
             </Form.Select>
             <button onClick={handleEnableGPU} type="button" >Next</button>
+            <Slides3 />
           </Form.Group>
 
           <Form.Group controlId="formGroupGraphicsCard">
@@ -143,7 +146,7 @@ const Build = () => {
               id="storageDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setStorage(event.target.value);
               }}
             >
               <option id="null">Please select a storage...</option>
@@ -162,7 +165,7 @@ const Build = () => {
               id="powersupplyDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setPowerSupply(event.target.value);
               }}
             >
               <option id="null">Please select a Power Supply...</option>
@@ -181,7 +184,7 @@ const Build = () => {
               id="systemcoolerDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setSystemCooler(event.target.value);
               }}
             >
               <option id="null">Please select a System Cooler...</option>
@@ -200,7 +203,7 @@ const Build = () => {
               id="soundcardDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setSoundCard(event.target.value);
               }}
             >
               <option id="null">Please select a Sound Card...</option>
@@ -219,7 +222,7 @@ const Build = () => {
               id="cpucaseDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setCPUCase(event.target.value);
               }}
             >
               <option id="null">Please select a CPU Case...</option>
@@ -238,7 +241,7 @@ const Build = () => {
               id="monitorDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setMonitor(event.target.value);
               }}
             >
               <option id="null">Please select a Monitor...</option>
@@ -257,7 +260,7 @@ const Build = () => {
               id="keyboardDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setKeyboard(event.target.value);
               }}
             >
               <option id="null">Please select a Keyboard...</option>
@@ -276,7 +279,7 @@ const Build = () => {
               id="mouseDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setMouse(event.target.value);
               }}
             >
               <option id="null">Please select a Mouse...</option>
@@ -284,7 +287,7 @@ const Build = () => {
               <option value="Acer">Acer</option>
               <option value="Gigabyte">Gigabyte</option>
             </Form.Select>
-            <button onClick={createOrders}>Submit</button>
+            <button onClick={createOrders}>Confirm Order</button>
           </Form.Group>
           </Form>
 
@@ -292,6 +295,7 @@ const Build = () => {
         {soundcard}{cpucase}{monitor}{keyboard}{mouse}</p>
       </div>
       <div className="secondProcess">
+
       </div>
     </div>
   );

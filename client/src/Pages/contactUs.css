@@ -52,7 +52,7 @@ input {
     outline: none;
     background: none;
     border-color: white;
-    color: white;
+    color: black;
 }
 
 textarea{
@@ -68,13 +68,14 @@ textarea{
 input:hover, textarea:hover{
     outline: white;
     background: none;
+    color: black;
     border-color: #f58634;
 }
 
-input:focus, textarea:focus{
+input:active, textarea:active{
     outline: none;
     background: none;
-    color: white;
+    color: black;
 }
 
 #textBox {

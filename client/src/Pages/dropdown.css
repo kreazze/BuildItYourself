@@ -1,0 +1,46 @@
+.dropdown-area {
+    padding: 0;
+    background-color: black;
+    background-image: url("../Images/Carousel-Background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+}
+
+.dropdown-header {
+    padding: 0.5;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.dropdown-body {
+    gap: 4rem;
+    color: black;
+}
+
+.studentContainer {
+    height: 400px;
+    width: 300px;
+    margin: 25px;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #f58634;
+}
+
+.dropdown-sub {
+    gap: 1rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
