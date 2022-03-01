@@ -15,10 +15,9 @@ const Build = () => {
   var [ram, setRAM] = useState("");
   var [graphicsCard, setGraphicsCard] = useState("");
   var [storage, setStorage] = useState("");
-  var [powersupply, setPowerSupply] = useState("");
-  var [systemcooler, setSystemCooler] = useState("");
-  var [soundcard, setSoundCard] = useState("");
-  var [cpucase, setCPUCase] = useState("");
+  var [powerSupply, setPowerSupply] = useState("");
+  var [systemCooler, setSystemCooler] = useState("");
+  var [cpuCase, setCPUCase] = useState("");
   var [monitor, setMonitor] = useState("");
   var [keyboard, setKeyboard] = useState("");
   var [mouse, setMouse] = useState("");
@@ -28,13 +27,12 @@ const Build = () => {
     Axios.post("http://localhost:3001/createOrders", {
       processor,
       motherboard,
-      ram,
       graphicsCard,
+      ram,
       storage,
-      powersupply,
-      systemcooler,
-      soundcard,
-      cpucase,
+      powerSupply,
+      systemCooler,
+      cpuCase,
       monitor,
       keyboard,
       mouse,
@@ -143,7 +141,7 @@ const Build = () => {
               id="storageDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setStorage(event.target.value);
               }}
             >
               <option id="null">Please select a storage...</option>
@@ -162,7 +160,7 @@ const Build = () => {
               id="powersupplyDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setPowerSupply(event.target.value);
               }}
             >
               <option id="null">Please select a Power Supply...</option>
@@ -181,7 +179,7 @@ const Build = () => {
               id="systemcoolerDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setSystemCooler(event.target.value);
               }}
             >
               <option id="null">Please select a System Cooler...</option>
@@ -192,24 +190,7 @@ const Build = () => {
             <button onClick={handleEnableGPU} type="button" >Next</button>
           </Form.Group>
           
-          <Form.Group controlId="formGroupSoundCard">
-            <Form.Label>Sound Card:</Form.Label>
-            <Form.Select
-              disabled={disabledMobo}
-              aria-label="Default select example"
-              id="soundcardDrop"
-              
-              onChange={(event) => {
-                setRAM(event.target.value);
-              }}
-            >
-              <option id="null">Please select a Sound Card...</option>
-              <option value="Asus">Asus</option>
-              <option value="Acer">Acer</option>
-              <option value="Gigabyte">Gigabyte</option>
-            </Form.Select>
-            <button onClick={handleEnableGPU} type="button" >Next</button>
-          </Form.Group>
+      
 
           <Form.Group controlId="formGroupCPUCase">
             <Form.Label>CPU Case:</Form.Label>
@@ -219,7 +200,7 @@ const Build = () => {
               id="cpucaseDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setCPUCase(event.target.value);
               }}
             >
               <option id="null">Please select a CPU Case...</option>
@@ -238,7 +219,7 @@ const Build = () => {
               id="monitorDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setMonitor(event.target.value);
               }}
             >
               <option id="null">Please select a Monitor...</option>
@@ -257,7 +238,7 @@ const Build = () => {
               id="keyboardDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setKeyboard(event.target.value);
               }}
             >
               <option id="null">Please select a Keyboard...</option>
@@ -276,7 +257,7 @@ const Build = () => {
               id="mouseDrop"
               
               onChange={(event) => {
-                setRAM(event.target.value);
+                setMouse(event.target.value);
               }}
             >
               <option id="null">Please select a Mouse...</option>
@@ -288,8 +269,8 @@ const Build = () => {
           </Form.Group>
           </Form>
 
-        <p>{processor}{motherboard}{ram}{graphicsCard}{storage}{powersupply}{systemcooler}
-        {soundcard}{cpucase}{monitor}{keyboard}{mouse}</p>
+        <p>{processor}{motherboard}{ram}{graphicsCard}{storage}{powerSupply}{systemCooler}
+        {cpuCase}{monitor}{keyboard}{mouse}</p>
       </div>
       <div className="secondProcess">
       </div>
