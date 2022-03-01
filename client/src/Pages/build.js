@@ -16,10 +16,9 @@ const Build = () => {
   var [ram, setRAM] = useState("");
   var [graphicsCard, setGraphicsCard] = useState("");
   var [storage, setStorage] = useState("");
-  var [powersupply, setPowerSupply] = useState("");
-  var [systemcooler, setSystemCooler] = useState("");
-  var [soundcard, setSoundCard] = useState("");
-  var [cpucase, setCPUCase] = useState("");
+  var [powerSupply, setPowerSupply] = useState("");
+  var [systemCooler, setSystemCooler] = useState("");
+  var [cpuCase, setCPUCase] = useState("");
   var [monitor, setMonitor] = useState("");
   var [keyboard, setKeyboard] = useState("");
   var [mouse, setMouse] = useState("");
@@ -29,13 +28,12 @@ const Build = () => {
     Axios.post("http://localhost:3001/createOrders", {
       processor,
       motherboard,
-      ram,
       graphicsCard,
+      ram,
       storage,
-      powersupply,
-      systemcooler,
-      soundcard,
-      cpucase,
+      powerSupply,
+      systemCooler,
+      cpuCase,
       monitor,
       keyboard,
       mouse,
@@ -195,6 +193,7 @@ const Build = () => {
             <button onClick={handleEnableGPU} type="button" >Next</button>
           </Form.Group>
           
+<<<<<<< HEAD
           <Form.Group controlId="formGroupSoundCard">
             <Form.Label>Sound Card:</Form.Label>
             <Form.Select
@@ -213,6 +212,9 @@ const Build = () => {
             </Form.Select>
             <button onClick={handleEnableGPU} type="button" >Next</button>
           </Form.Group>
+=======
+      
+>>>>>>> 8da2a798450e878f4be0e097b8d704f8442ce8c7
 
           <Form.Group controlId="formGroupCPUCase">
             <Form.Label>CPU Case:</Form.Label>
@@ -291,8 +293,8 @@ const Build = () => {
           </Form.Group>
           </Form>
 
-        <p>{processor}{motherboard}{ram}{graphicsCard}{storage}{powersupply}{systemcooler}
-        {soundcard}{cpucase}{monitor}{keyboard}{mouse}</p>
+        <p>{processor}{motherboard}{ram}{graphicsCard}{storage}{powerSupply}{systemCooler}
+        {cpuCase}{monitor}{keyboard}{mouse}</p>
       </div>
       <div className="secondProcess">
 
