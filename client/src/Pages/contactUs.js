@@ -36,7 +36,7 @@ const ContactUs = () => {
     return (
         <div className='contactUs_body'>
             <div className='header'>
-                <h1>Connect with us!</h1>
+                <h1><b>Connect with us!</b></h1>
             </div>
             <div className='containerContact'>
                 <div className='contactUs_div1'>
@@ -84,7 +84,7 @@ const ContactUs = () => {
                 </div>
                 <div className='contactUS_div2'>
                     <div className='appicon_div'>
-                        <h2>Contact Information</h2>
+                        <h2 id="h2-id">Contact Information</h2>
                         <div className='contact'>
                             <MdLocationOn size={50}/>{contact_text1}
                         </div>
@@ -92,7 +92,7 @@ const ContactUs = () => {
                             <MdEmail size={50}/>{contact_text2}
                         </div><br/>
                         
-                        <h2>Other ways to connect</h2>
+                        <h2 id="h2-id">Other ways to connect</h2>
                         <div className='contact'>
                             <BsFacebook size={50}/>{contact_text3}
                         </div>

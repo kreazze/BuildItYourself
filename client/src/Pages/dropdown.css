@@ -1,5 +1,5 @@
 .dropdown-area {
-    padding: 0;
+    padding-top: 2rem;
     background-color: black;
     background-image: url("../Images/Carousel-Background.jpg");
     background-attachment: fixed;
@@ -8,7 +8,10 @@
 }
 
 .dropdown-header {
-    padding: 0.5;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+    padding: 1rem;
+    border-radius: 10px;
     align-items: center;
     text-align: center;
     background-color: black;
@@ -20,10 +23,18 @@
     color: black;
 }
 
+.dropdown-sub {
+    gap: 1rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
 .studentContainer {
     height: 400px;
     width: 300px;
-    margin: 25px;
+    margin: 1rem;
+    margin-top: 3rem;
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
@@ -38,9 +49,41 @@
     background-color: #f58634;
 }
 
-.dropdown-sub {
-    gap: 1rem;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
+.studentContainer:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#id-span {
+    color: #f58634;
+}
+
+#id-img {
+    width: 400px;
+    height: 220px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#id-img1 {
+    margin: 0.75rem;
+}
+
+#id-p {
+    padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-sub {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .studentContainer {
+        height: 400px;
+        width: 300px;
+        align-items: center;
+        border-radius: 20px;
+    }
 }

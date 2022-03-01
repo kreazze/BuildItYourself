@@ -4,13 +4,16 @@ import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavBarComponent
 import { Link } from "react-router-dom"
 
 const NavBar = () => {
+
+
+
     return (
 
           <Nav>
                 <NavLink to="/">
                     <img src="/Resources/logo.png" alt='' width="250" ></img>
                 </NavLink>
-                <Bars />
+                
                 <NavMenu>
                     <NavLink to ="/about" activeStyle>
                         About
@@ -19,7 +22,7 @@ const NavBar = () => {
                         Learn More
                     </NavLink>
                     <NavDropdown title="Pre-Builds" id="dropdown">
-                        <NavDropdown.Item as={Link} to="/student" id="dropdown">for Student</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/office" id="dropdown">for Office</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item as={Link} to="/gaming" id="dropdown">for Gaming</NavDropdown.Item>
                         <NavDropdown.Divider />
@@ -29,6 +32,7 @@ const NavBar = () => {
                         Contact Us
                     </NavLink>
                 </NavMenu>
+
                 <NavBtn>
                     <NavBtnLink to ='/build'>Start Building!</NavBtnLink>
                 </NavBtn>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import "./index.css";
 import Footer from '../Pages/footer';
 import Img3 from '../Images/img3.png';
@@ -31,8 +31,8 @@ const Home = () => {
                     <h1>LET'S <span>BUILD YOUR PC</span> NOW!</h1>
                     <p className='pIndex'>Get your way to technology</p>
                     <a href="#midScroll" target='_parent' className='btnHome1'>Learn More</a>
-                    <Link to='/pre-build'>
-                        <button className='btnHome2'>Pre-Builds</button>
+                    <Link to='/build'>
+                        <button className='btnHome2'>Build Now</button>
                     </Link>
                     <div className='anchorLink'>
                         <a name="midScroll"a/>
@@ -45,17 +45,17 @@ const Home = () => {
 
             <div className='downcontainerIndex'>
                 <form>
-                    <Link to='/build' className='downDiv' color='#dd600'>
-                        <div className='box1'>
-                            <Box description="Gaming" images={Img4}/>
-                        </div>
-                        <div className='box1'>
+                    <div className='downDiv' color='#dd600'>
+                        <Link to='/office' className='box1'>
                             <Box description="Office" images={Img5}/>
-                        </div>
-                        <div className='box1'>
-                            <Box description="Educational" images={Img6}/>
-                        </div>
-                    </Link>
+                        </Link>
+                        <Link to='/gaming' className='box1'>
+                            <Box description="Gaming" id="dropdown" images={Img4}/>
+                        </Link>
+                        <Link to='/education' className='box1'>
+                            <Box description="Education" images={Img6}/>
+                        </Link>
+                    </div>
                 </form>
             </div>
             <Footer/>

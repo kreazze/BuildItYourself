@@ -6,7 +6,7 @@ import Home from './Pages'
 import About from './Pages/about';
 import ContactUs from './Pages/contactUs';
 import Learn from './Pages/learn';
-import Student from './Pages/student';
+import Office from './Pages/office';
 import Gaming from './Pages/gaming';
 import Education from './Pages/education';
 import Build from './Pages/build';
@@ -20,7 +20,7 @@ function App() {
         <Route path='/about' component={About} />
         <Route path='/contact-us' component={ContactUs} />
         <Route path='/learn' component={Learn} />
-        <Route path='/student' component={Student} />
+        <Route path='/office' component={Office} />
         <Route path='/gaming' component={Gaming} />
         <Route path='/education' component={Education} />
         <Route path='/build' component={Build} />

@@ -23,12 +23,19 @@
         flex-direction: column;
     }
     .contact  {
+        margin-left: 2rem;
         display: flex;
         flex-direction: row;
     }
     .apps {
         display: flex;
         flex-direction: column;
+    }
+    .appicon_div {
+        margin: 2rem;
+    }
+    #h2-id {
+        text-align: center;
     }
 }
 

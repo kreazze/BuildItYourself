@@ -36,8 +36,10 @@ body {
         justify-content: center;
     }
     .btnHome1, .btnHome2 {
+        justify-content: center;
         display: flex;
         flex-direction: column;
+        text-decoration: none;
     }
     .downDiv {
         display: inline-block;
@@ -152,3 +154,8 @@ span{
     background-color:#f58634;
 }
 
+.homeBox:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    cursor: pointer;
+}

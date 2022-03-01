@@ -16,14 +16,14 @@
     background-image: url("../Images/Carousel-Background.jpg");
     display: flex;
     flex-direction: column;
-    padding: 3rem;
-    padding-right: 4rem;
+    padding: 2rem;
+    padding-right: 3rem;
 }
 
-#note {
+#id-note {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
-    border-radius: 8px;
+    border-radius: 5px;
     border-style: solid;
     border-color: #f58634;
     background-color: #f58634;
