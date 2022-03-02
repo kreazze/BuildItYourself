@@ -10,7 +10,7 @@ const NavBar = () => {
 
     return (
         
-        <Navbar collapseOnSelect expand="lg" variant="dark" className='NavBar'>
+        <Navbar collapseOnSelect expand="lg" variant="dark" id='NavBar'>
           <Container>
         <Navbar.Brand href="/">
           <img src={Logo}
@@ -25,15 +25,16 @@ const NavBar = () => {
             <Nav.Link href="/learn">Learn more</Nav.Link>
             <NavDropdown title="Pre-Builds" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/office">For Office</NavDropdown.Item>
-              <NavDropdown.Item href="/gaming">
-                For Gaming
-              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/gaming">For Gaming</NavDropdown.Item>
+              <NavDropdown.Divider />
               <NavDropdown.Item href="/education">For Education</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/transaction">Transaction (Temporary)</Nav.Link>
           </Nav>
           
         </Navbar.Collapse>
-        <Button href="/build" className='ButtonNow'>Build Now!</Button>
+        <Button href="/build" id='ButtonNow'>Build Now!</Button>
         </Container>
       </Navbar>
       

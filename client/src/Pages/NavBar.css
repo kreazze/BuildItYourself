@@ -1,7 +1,15 @@
-.NavBar{
-    background-color: #01040F;
+#NavBar {
+    background-color: black;
 }
 
-.ButtonNow{
+#ButtonNow{
+    background-color: #f58634;
+    border-style: none;
+}
+
+#ButtonNow:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    cursor: pointer;
     background-color: #f58634;
 }

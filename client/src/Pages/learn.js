@@ -24,7 +24,7 @@ import Community from '../Images/community.jpg';
 
 const Learn = () => {
     return (
-        <>
+        <div>
             <div className='learnmore_body'>
                 <Carousel>
                     <Carousel.Item id='carouselImages'>
@@ -209,7 +209,7 @@ const Learn = () => {
                 </div>
                 <Footer />
             </div>
-        </>
+        </div>
     )
 }
 

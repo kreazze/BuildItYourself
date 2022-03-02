@@ -3,7 +3,7 @@ import { MDBFooter } from 'mdb-react-ui-kit';
 
 export default function App() {
   return (
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+    <MDBFooter bgColor='dark' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with us on social networks:</span>
@@ -36,11 +36,10 @@ export default function App() {
           <div className='row mt-3'>
             <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
-                <i className='fas fa-gem me-3'></i>Company name
+                <i className='fas fa-gem me-3'></i>BUILD-IT-YOURSELF
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+                A website that offers custom PC buiding services.
               </p>
             </div>
 
@@ -48,31 +47,31 @@ export default function App() {
               <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Angular
+                  Intel Core
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  React
+                  AMD
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Vue
+                  NVIDIA® 
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Laravel
+                  All-in-One PCs
                 </a>
               </p>
             </div>
 
             <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Social links</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Pricing
+                  Price
                 </a>
               </p>
               <p>
@@ -93,19 +92,16 @@ export default function App() {
             </div>
 
             <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Contact Uss</h6>
               <p>
-                <i className='fas fa-home me-3'></i> New York, NY 10012, US
+                <i className='fas fa-home me-3'></i> PUP Sta. Mesa., Manila, PH
               </p>
               <p>
                 <i className='fas fa-envelope me-3'></i>
-                info@example.com
+                buildityourself@mail.com              
               </p>
               <p>
-                <i className='fas fa-phone me-3'></i> + 01 234 567 88
-              </p>
-              <p>
-                <i className='fas fa-print me-3'></i> + 01 234 567 89
+                <i className='fas fa-phone me-3'></i> +639 123 456 7890
               </p>
             </div>
           </div>
@@ -113,9 +109,9 @@ export default function App() {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
+        © 2022 Copyright:
         <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+          Build-It-Yourself.com
         </a>
       </div>
     </MDBFooter>

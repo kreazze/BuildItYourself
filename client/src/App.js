@@ -9,6 +9,7 @@ import Learn from './Pages/learn';
 import Office from './Pages/office';
 import Gaming from './Pages/gaming';
 import Education from './Pages/education';
+import Transaction from './Pages/transaction';
 import Build from './Pages/build';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/office' component={Office} />
         <Route path='/gaming' component={Gaming} />
         <Route path='/education' component={Education} />
+        <Route path='/transaction' component={Transaction} />
         <Route path='/build' component={Build} />
       </Switch>
     </Router>
