@@ -29,7 +29,7 @@ const Transaction = () => {
     return (
         <div className='transaction-body'>
             <div className='transaction-header'>
-                <h1>BILLLING DETAILS</h1>
+                <h1>Billing Details</h1>
             </div>
             <div className='containerTransaction'>
                 <div className='transaction_div2'>

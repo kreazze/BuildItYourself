@@ -30,7 +30,7 @@ const NavBar = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item href="/education">For Education</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/transaction">Transaction (Temporary)</Nav.Link>
+            <Nav.Link href="/transaction">Transaction</Nav.Link>
           </Nav>
           
         </Navbar.Collapse>
