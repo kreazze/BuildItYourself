@@ -28,21 +28,43 @@ function Gaming() {
       </div>
       <div className="dropdown-body">
         <div className="dropdown-sub">
-          <Studentbox info1="HP ENVY All-in-One PC" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student1}/>
-          <Studentbox info1="HP All-in-One 24-df1036xt PC" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student2}/>
-          <Studentbox info1="Acer ASpire XC-830" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student3}/>
-          <Studentbox info1="HP All-in-One 24-df1036xt PC" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student2}/>
+          <Studentbox 
+            info1="Entry Level AMD Gaming Build" 
+            info2="AMD Ryzen 5 5600G - 16GB DDR4 RAM + 480-15360GB SSD" 
+            info3="PHP 22,502.25" 
+            images={Student1}/>
+          <Studentbox 
+            info1="Modest Intel Gaming Build" 
+            info2="Intel Core i5-12400F - 2x8GB DDR4 RAM + 1TB NVME SSD" 
+            info3="PHP 56,421.57" 
+            images={Student2}/>
+          <Studentbox 
+            info1="Enthusiast Intel Gaming/Streaming Build" 
+            info2="Intel Core i7-12700K - 32GB DDR4-3200 RAM + 1TB NVME SSD" 
+            info3="PHP 99,873.00" 
+            images={Student3}/>
+          <Studentbox 
+            info1="Mid-Budget Gaming PC" 
+            info2="AMD Ryzen 5 2600X @4.2 GHz GeForce GTX 1070" 
+            info3="PHP 41,819.25" 
+            images={Student2}/>
         </div>
         <div className="dropdown-sub">
-          <Studentbox info1="HP ENVY All-in-One PC" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student1}/>
-          <Studentbox info1="HP All-in-One 24-df1036xt PC" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student2}/>
-          <Studentbox info1="Acer ASpire XC-830" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student3}/>
-          <Studentbox info1="HP All-in-One 24-df1036xt PC" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student2}/>
-        </div>
-        <div className="dropdown-sub">
-          <Studentbox info1="HP ENVY All-in-One PC" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student1}/>
-          <Studentbox info1="HP All-in-One 24-df1036xt PC" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student2}/>
-          <Studentbox info1="HP All-in-One 24-df1036xt PC" info2="HP ENVY All-in-One PC" info3="HP ENVY All-in-One PC" images={Student2}/>
+          <Studentbox 
+            info1="Low-Budget Gaming PC" 
+            info2="Intel Core i7-11700K @3.6 GHz 8-Core - 16GB DDR4-2400 RAM + 500 GB 2.5'' SSD" 
+            info3="PHP 31,935.73" 
+            images={Student1}/>
+          <Studentbox 
+            info1="PCX GFH TUF FROST STRIX Intel Core I9 Gaming Desktop" 
+            info2="Intel Core i9 - 32GB 3200MHZ (4x8GB) 500GB PCIE NVME M.2 SSD | 4TB SATA & NVIDIA® GEFORCE RTX™ 3070 OC" 
+            info3="PHP 156,995.00" 
+            images={Student2}/>
+          <Studentbox 
+            info1="PCX GFH CENTAUR TUF GAMING DESKTOP" 
+            info2="AMD Ryzen™ 5 3600 (3.6GHZ) - 2500GB PCIE NVME M.2 SSD + 1TB SATA & NVIDIA GEFORCE® GTX 1660 SUPER™ OC" 
+            info3="PHP 59,495.00" 
+            images={Student2}/>
         </div>
       </div>
       <Footer />

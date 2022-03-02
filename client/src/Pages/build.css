@@ -17,7 +17,8 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    padding-right: 3rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
 }
 
 #id-note {
@@ -36,4 +37,9 @@
     border-style: solid;
     border-color: #f58634;
     background-color: #f58634;
+}
+
+.button {
+    margin-top: 0.5rem;
+    padding: 0.2rem;
 }

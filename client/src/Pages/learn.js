@@ -26,7 +26,7 @@ const Learn = () => {
     return (
         <>
             <div className='learnmore_body'>
-                <Carousel className='carouselLearn'>
+                <Carousel>
                     <Carousel.Item id='carouselImages'>
                             <img
                                 src={Img6}
